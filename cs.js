@@ -23,7 +23,7 @@ var colorSudoku = (function () {
     }
 
     init_game = function () {
-        config.board_size = array_choose_n([3, 4], 1);
+        config.board_size = array_choose_n([3, 4, 5, 6], 1);
         config.level = random_level(config.board_size);
         config.colors = array_choose_n(COLORS, config.board_size);
         config.enable_block = config.board_size >= 9 && Math.sqrt(config.board_size) % 1 === 0;
@@ -71,8 +71,8 @@ var colorSudoku = (function () {
 
     random_level = function (size) {
         var size = size * size,
-            min = Math.ceil(size * 0.3),
-            max = Math.floor(size * 0.7),
+            min = Math.ceil(size * 0.4),
+            max = Math.floor(size * 0.9),
             rst = Math.floor(Math.random() * (max - min + 1) + min);
         return rst;
     }
