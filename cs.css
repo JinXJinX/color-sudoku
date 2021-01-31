@@ -120,7 +120,11 @@ body {
     display: block;
     margin-top: 10px;
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #efefef;
+    text-align: center;
+    border: 1px solid #333;
 }
 #level-box {
     display: flex;
