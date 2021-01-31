@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="cs.css">
     </head>
     <body>
         <div class="game-intro">
-            <h1>Color Sudoku</h1>
-            <h3>RULE: No same color on one row/column</h3>
+            <h1 class="ear ear-dark">Color Sudoku</h1>
+            <h3>RULE: No same color on same row/column</h3>
         </div>
         <div class="game-board"></div>
         <div id="msg-box"></div>
         <div id="control-box">
-            <div id="btn-color-box"></div>
-            <button id="btn-new">new game</button>
+            <div id="btn-color-box-1"></div>
+            <div id="btn-color-box-2"></div>
+            <button id="btn-new">NEW GAME</button>
+            <div id="level-box">
+                <div class="level level-selected" data-size="3">
+                    <span class="level-name">3 x 3</span>
+                    <span class="level-desc">Easy</span>
+                </div>
+                <div class="level" data-size="4"><span class="level-name">4 x 4</span></div>
+                <div class="level" data-size="5"><span class="level-name">5 x 5</span></div>
+                <div class="level" data-size="6">
+                    <span class="level-name">6 x 6</span>
+                    <span class="level-desc">Hard</span>
+                </div>
+            </div>
         </div>
+
+        <small class="source-code-link"><a target="_blank" href="https://github.com/JinXJinX/color-sudoku">❤️ source code ❤️</a></small>
+
         <script src="cs.js"></script>
     </body>
 </html>
