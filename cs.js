@@ -474,4 +474,8 @@ var colorSudoku = (function () {
     }
 })();
 
-colorSudoku.init();
+var tid = setInterval( function () {
+    if (document.readyState !== "complete") return;
+    clearInterval(tid);
+    colorSudoku.init();
+}, 100 );
