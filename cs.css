@@ -77,7 +77,8 @@ body {
     height: 12px;
 }
 .game-board {
-
+    display: block;
+    width: 100%;
 }
 .game-intro {
     text-align: center;
